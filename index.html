@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Failtime</title>
+  <meta name="description" content="Failtime">
+  <meta name="author" content="failtime">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://failtime.freeshell.org/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+  <link rel="stylesheet" href="http://failtime.freeshell.org/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="http://failtime.freeshell.org/highlight/styles/github.css">
+  
+  <script src="http://failtime.freeshell.org/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="/" class="site-title pure-menu-heading">Failtime</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="http://failtime.freeshell.org/micro/" class="pure-menu-link">Micro</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://failtime.freeshell.org/about/" class="pure-menu-link">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="/" class="pure-menu-heading" id="toggle-home">Failtime</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+                <li class="pure-menu-item">
+                    <a href="http://failtime.freeshell.org/micro/" class="pure-menu-link">Micro</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://failtime.freeshell.org/about/" class="pure-menu-link">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+	  <div class="post">
+           <!-- Watermark -->
+<p>The Moto X Pure Edition looks incredible! Plus it works even on CDMA carriers. I may have found my next phone.</p>
+<p class="footnote">
+<time class="">Tue Jul 28 15:30:45 UTC 2015</time>
+
+<p>I had to play around with the sed syntax, but my little script works well enough.</p>
+<p class="footnote">
+<time class="">Tue Jul 28 15:06:00 UTC 2015</time>
+
+<p>My first kinda microblogging post!</p>
+<p class="footnote">
+<time class="">Tue Jul 28 15:01:54 UTC 2015</time>
+
+       </div>
+	  </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="pure-menu pure-menu-horizontal footer-content">
+            <ul>
+                <li class="pure-menu-heading" id="foot-name">failtime: - <a href="http://sdf.org/">Powered by SDF</a> - <a href="/index.xml">RSS</a></li>
+            </ul>
+            <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+        </div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="http://failtime.freeshell.org/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://failtime.freeshell.org/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+</body>
+</html>
+
