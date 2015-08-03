@@ -5,7 +5,8 @@ if [[ $length -gt 150 ]]; then
 else
     date_val=$(date)
     if [[ ! -z $2 && ! -z $3 ]]; then
-        value="$1 > <a href=\"$2\">$3<\/a>"
+        url=`echo $2 | sed 's/\//\\\\\//g'`
+        value="$1 > <a href=\"$url\">$3<\/a>"
     else
         value=$1
     fi
